@@ -48,6 +48,14 @@
         .btn-primary:hover {
             background-color: #004b99;
         }
+        .plan-field {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .plan-field input[type="date"] {
+            width: 200px;
+        }
     </style>
 </head>
 <body>
@@ -122,7 +130,10 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="plan">Plan:</label>
-                                    <textarea class="form-control" id="plan" name="plan" rows="3"></textarea>
+                                    <div class="plan-field">
+                                        <textarea class="form-control" id="plan" name="plan" rows="3"></textarea>
+                                        <input type="date" class="form-control" id="plan_date" name="plan_date">
+                                    </div>
                                 </div>
                             </div>
                         </div>
